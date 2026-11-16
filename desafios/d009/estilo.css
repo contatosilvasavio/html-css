@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* --------------Galeria/Página inicial ----------------*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 320px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria a{
+    display: block;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform .2s, border-color .2s;
+}
+
+.galeria a:hover {
+    transform: scale(1.03);
+    border-color: #f7df1e;
+}
+
+.galeria img {
+    width: 100%;
+    display: block;
+}
+
+/* ---------- Página individual de vídeo ---------- */
+.player {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.player iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.link-curso {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 8px 16px;
+    border-bottom: 2px solid #f7df1e;
+    transition: color .2s;
+}
+
+.link-curso:hover {
+    color: #f7df1e;
+}
+
+.voltar {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.voltar:hover {
+    transform: translateX(-6px);
+}
+
+.voltar img {
+    filter: invert(1);
+}
